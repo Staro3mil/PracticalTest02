@@ -28,6 +28,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
          />
+    <Button
+        android:id="@+id/goToServerTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Server Time"
+        app:layout_constraintTop_toBottomOf="@id/btnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp" />
 
     <TextView
         android:id="@+id/tvDefinition"
@@ -35,7 +44,7 @@
         android:layout_height="wrap_content"
         android:text="Definition will appear here"
         android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@id/btnSearch"
+        app:layout_constraintTop_toBottomOf="@id/goToServerTimeButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5" />

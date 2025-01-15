@@ -11,6 +11,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import android.content.Intent
+
 import org.json.JSONArray
 
 class MainActivity : AppCompatActivity() {
@@ -38,6 +40,13 @@ class MainActivity : AppCompatActivity() {
                 Log.d("DictionaryApp", "Please enter a word.")
             }
         }
+
+        val goToServerTimeActivityButton: Button = findViewById(R.id.goToServerTimeButton)
+        goToServerTimeActivityButton.setOnClickListener {
+            val intent = Intent(this, ServerTimeActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun fetchDefinition(word: String) {
